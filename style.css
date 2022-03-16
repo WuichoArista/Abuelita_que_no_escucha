@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    background-color: #f4f1bb;
+
+}
+
+header{
+    background-color: #c08497;
+    margin: 0;
+}
+
+.header_container{
+    max-width: 83rem;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.header_title{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.header_title h1{
+    margin: 0;
+}
+
+section{
+    margin: 0;
+}
+
+.boton_container{
+    max-width: 83rem;
+    margin: 0 auto;
+}
+
+.boton{
+    width: 100%;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton img{
+    width: 250px;
+    height: 250px;
+   
+}
+
+.boton a{
+    text-decoration: none;
+    color: white;
+    background-color: #ff35c2;
+    padding: 15px 35px;
+    margin-top: 15px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.boton a:hover{
+    background-color: #eb32b3;
+}
+
+
