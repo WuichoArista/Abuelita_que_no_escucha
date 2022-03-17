@@ -18,8 +18,12 @@
                 adios = prompt('¿Mios?')
                 if(adios === 'adios' || adios === 'Adios' || adios === 'ADIOS') {
                     alert('Ahhhhh adios hijito')
-                }  
+                }  else {
+                    saludo = prompt('"¡¿EH?! ¡NO TE ESCUCHO, HIJO!"')
+                    mensaje()
+                }
            }else {
+               saludo = prompt('"¡¿EH?! ¡NO TE ESCUCHO, HIJO!"')
                mensaje()
            }
        }
