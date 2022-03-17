@@ -1,11 +1,11 @@
 body{
     margin: 0;
-    background-color: #f4f1bb;
+    background-color: #3a3f58;
 
 }
 
 header{
-    background-color: #c08497;
+    background-color: #f9ac67;
     margin: 0;
 }
 
@@ -25,6 +25,8 @@ header{
     margin: 0;
 }
 
+
+
 section{
     margin: 0;
 }
@@ -32,6 +34,7 @@ section{
 .boton_container{
     max-width: 83rem;
     margin: 0 auto;
+    
 }
 
 .boton{
@@ -41,6 +44,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .boton img{
@@ -51,8 +55,8 @@ section{
 
 .boton a{
     text-decoration: none;
-    color: white;
-    background-color: #ff35c2;
+    color: #ece6cd;
+    background-color: #ee6a59;
     padding: 15px 35px;
     margin-top: 15px;
     font-weight: 900;
@@ -60,7 +64,7 @@ section{
 }
 
 .boton a:hover{
-    background-color: #eb32b3;
+    background-color: #ff662a;
 }
 
 
