@@ -1,6 +1,35 @@
 
  let boton = document.querySelector('.boton_empezar')
- boton.onclick = function () {   
+ let personaContestacion = document.getElementById('persona_contestacion')
+ let abuelitaContestacion = document.getElementById('abuelita_contestacion')
+
+ const mensaje = () => {
+   let persona = personaContestacion.value
+   let respuesta
+    if( persona === persona.toUpperCase() && persona !== 'ADIOS' && persona !== 'ADIÓS' && persona !== '') {
+        respuesta = 'NO, NO DESDE 1983'
+       abuelitaContestacion.innerHTML = respuesta
+    } else if( persona === '') {
+        respuesta = 'HABLA QUE NO TE ESCUCHO'
+        abuelitaContestacion.innerHTML = respuesta
+     } else if ( persona === 'Adios' || persona === ' Adiós' || persona === 'adios' || persona === 'adiós'){
+        abuelitaContestacion.innerHTML = '¿DIJISTE ARROZ?'
+     }else if(persona !== "" && persona !== 'ADIÓS' && persona !== 'ADIOS'){
+        respuesta = '¡¿EH?! ¡NO TE ESCUCHO, HIJO!'
+        abuelitaContestacion.innerHTML = respuesta
+     } else if( persona === 'ADIOS'){
+        respuesta = '!AHHH¡ ADIOS'
+        abuelitaContestacion.innerHTML = respuesta
+
+     }
+ }
+
+ boton.addEventListener( 'click' , mensaje)
+
+
+// opcion com prompt
+
+/*  boton.onclick = function () {   
     let saludo = prompt('Hola hijo que paso')
     function mensaje (){
         if( saludo === saludo.toUpperCase() && saludo !=='ADIOS TQM' && saludo !== 'ADIÓS TQM' && saludo !== ""  ){
@@ -30,5 +59,5 @@
     }
     mensaje()
  }
-
+ */
 
