@@ -1,11 +1,12 @@
 body{
     margin: 0;
-    background-color: #f4f1bb;
+    background-color: #3a3f58;
+    height: 100vh;
 
 }
 
 header{
-    background-color: #c08497;
+    background-color: #f9ac67;
     margin: 0;
 }
 
@@ -25,42 +26,111 @@ header{
     margin: 0;
 }
 
-section{
-    margin: 0;
-}
 
-.boton_container{
-    max-width: 83rem;
-    margin: 0 auto;
-}
-
-.boton{
-    width: 100%;
-    height: 580px;
+.juego{
+    height: calc( 100vh - 80px);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.boton img{
+
+.Juego_container{
+    max-width: 83rem;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    
+}
+
+.contestacion{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contestacion p {
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+
+}
+.contestacion p::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: -8px;
+    left: 50%;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.abuelita{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.abuelita img{
     width: 250px;
     height: 250px;
    
 }
 
-.boton a{
+.mensaje{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje input{
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    margin: 0 5px;
+}
+
+.mensaje a{
     text-decoration: none;
-    color: white;
-    background-color: #ff35c2;
-    padding: 15px 35px;
-    margin-top: 15px;
+    color: #ece6cd;
+    background-color: #ee6a59;
+    padding: 5px 20px;
     font-weight: 900;
     font-size: 20px;
+    margin: 0 5px;
+
 }
 
-.boton a:hover{
-    background-color: #eb32b3;
+
+.mensaje a:hover{
+    background-color: #ff662a;
 }
 
 
+@media ( max-width : 800px) {
+    .mensaje input{
+        font-size: 16px;
+    }
+    
+    .mensaje a{
+        font-size: 16px;
+
+    }
+    
+}
